@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+  <div class="container">  
+    <!-- ------------------------------------------------------------------------------------ -->
+    <div class="search-box">
+      <i class='bx bxs-map'></i>
+      <input type="text" id="locationInput" placeholder="Enter a city">
+      <button id="searchButton"><i class='bx bx-search-alt-2'></i></button>
+    </div>
+    <!-- ------------------------------------------------------------------------------------ -->
+    <div class="not-found">
+      <div class="box">
+        <img src="images/404.png">
+        <p>OOPS! Can't fetch data now</p>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------ -->
+    <div class="weather-box">
+      <div class="weather info">
+        <div class="weather">
+          <img id="img" src="images/cloud.png">
+          <h1 id="temperature">21<span>°C</span></h1>
+          <h2 id="description">Clouds</h2>
+          <h2 id="city">Delhi </h2>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------ -->
+    <div class="weather-details">
+      <div class="humidity-details">
+        <i class='bx bx-water'></i>
+        <div class="text">
+          <div class="humid-info">
+            <h3 id="humidity">56°C</h3>
+          </div>
+          <p>Humidity</p>
+        </div>
+      </div>
+
+      <div class="wind-details">
+        <i class='bx bx-wind'></i>
+        <div class="text">
+          <div class="wind-info">
+            <h3 id="wind">6km/h</h3>
+          </div>
+          <p>Wind</p>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------ -->
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
